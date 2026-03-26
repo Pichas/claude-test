@@ -816,6 +816,124 @@ p {
 }
 
 /* ============================================
+   Footer
+   ============================================ */
+.footer {
+  background-color: hsl(210, 17%, 16%);
+  color: hsl(0, 0%, 85%);
+  padding: 3rem 0 0;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__title {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer__links a {
+  color: hsl(0, 0%, 75%);
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.footer__links a:hover {
+  color: #fff;
+}
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.footer__contact li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: hsl(0, 0%, 75%);
+  font-size: 0.95rem;
+}
+
+.footer__contact li i {
+  color: var(--primary-light);
+  width: 18px;
+  text-align: center;
+}
+
+.footer__contact a {
+  color: hsl(0, 0%, 75%);
+}
+
+.footer__contact a:hover {
+  color: #fff;
+}
+
+.footer__social {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.footer__social-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: hsla(0, 0%, 100%, 0.1);
+  color: #fff;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.footer__social-btn:hover {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 0;
+  font-size: 0.9rem;
+}
+
+.footer__bottom p {
+  color: hsl(0, 0%, 60%);
+  margin-bottom: 0;
+}
+
+.footer__bottom a {
+  color: hsl(0, 0%, 60%);
+}
+
+.footer__bottom a:hover {
+  color: #fff;
+}
+
+/* ============================================
    Cookie Banner
    ============================================ */
 .cookie-banner {
@@ -823,11 +941,10 @@ p {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: var(--text);
+  background-color: hsl(210, 17%, 16%);
   color: var(--bg);
   padding: 1rem 0;
   z-index: 9999;
-  display: none;
 }
 
 .cookie-banner__inner {
@@ -837,22 +954,13 @@ p {
   gap: 1rem;
 }
 
-.cookie-banner__inner p {
-  color: var(--bg);
+.cookie-banner__text {
+  color: hsl(0, 0%, 85%);
   margin-bottom: 0;
+  font-size: 0.9rem;
 }
 
-/* ============================================
-   Footer Base Styles
-   ============================================ */
-.footer {
-  background-color: var(--text);
-  color: var(--secondary);
-  padding: 2rem 0;
-  text-align: center;
-}
-
-.footer p {
-  color: var(--secondary);
-  margin-bottom: 0;
+.cookie-banner__btn {
+  white-space: nowrap;
+  flex-shrink: 0;
 }

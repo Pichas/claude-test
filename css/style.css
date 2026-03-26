@@ -716,6 +716,106 @@ p {
 }
 
 /* ============================================
+   Consultation Form Section
+   ============================================ */
+.consultation {
+  background-color: var(--secondary);
+}
+
+.consultation__subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--text-soft);
+  margin-bottom: 2rem;
+}
+
+.consultation__form {
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.form__group {
+  margin-bottom: 1.25rem;
+}
+
+.form__group--honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.form__input,
+.form__textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 2px solid var(--secondary-darker);
+  border-radius: var(--border-radius);
+  background-color: var(--bg);
+  color: var(--text);
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form__input:focus,
+.form__textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--primary-fade);
+}
+
+.form__textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form__checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.form__checkbox input[type="checkbox"] {
+  margin-top: 0.25rem;
+  accent-color: var(--primary);
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.form__checkbox label {
+  font-size: 0.9rem;
+  color: var(--text-soft);
+  line-height: 1.4;
+}
+
+.form__checkbox label a {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.form__submit {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ============================================
    Cookie Banner
    ============================================ */
 .cookie-banner {

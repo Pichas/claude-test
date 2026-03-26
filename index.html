@@ -566,7 +566,40 @@
     <!-- Consultation Form Section -->
     <section class="consultation section" id="consultation" data-aos="fade-up">
       <div class="container">
-        <h2 class="section-title">Получить консультацию</h2>
+        <h2 class="section-title">Не знаете какое масло подобрать?</h2>
+        <p class="consultation__subtitle">Оставьте заявку на бесплатную консультацию — мы ответим в течение 15 минут!</p>
+
+        <form class="consultation__form" action="#" method="POST" novalidate>
+          <!-- Honeypot -->
+          <div class="form__group form__group--honeypot" aria-hidden="true">
+            <label for="website">Не заполняйте</label>
+            <input type="text" name="website" id="website" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="form__group">
+            <label class="form__label visually-hidden" for="consultation-name">Ваше имя</label>
+            <input class="form__input" type="text" id="consultation-name" name="name" placeholder="Ваше имя" required data-validate="name">
+          </div>
+
+          <div class="form__group">
+            <label class="form__label visually-hidden" for="consultation-phone">Телефон</label>
+            <input class="form__input" type="tel" id="consultation-phone" name="phone" placeholder="+7 (___) ___-__-__" required data-validate="phone">
+          </div>
+
+          <div class="form__group">
+            <label class="form__label visually-hidden" for="consultation-message">Ваш вопрос</label>
+            <textarea class="form__textarea" id="consultation-message" name="message" placeholder="Ваш вопрос" rows="4" data-validate="message"></textarea>
+          </div>
+
+          <div class="form__group form__checkbox">
+            <input type="checkbox" id="consultation-privacy" name="privacy" required data-validate="privacy">
+            <label for="consultation-privacy">Я согласен с <a href="#" target="_blank">политикой конфиденциальности</a></label>
+          </div>
+
+          <div class="form__group">
+            <button type="submit" class="btn btn--primary form__submit">Заказать звонок</button>
+          </div>
+        </form>
       </div>
     </section>
 

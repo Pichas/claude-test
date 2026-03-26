@@ -28,35 +28,75 @@
 
   <!-- Header -->
   <header class="header" id="header">
-    <div class="container header__inner">
-      <div class="header__logo">
-        <a href="#">ОДАС-ГРУПП</a>
-      </div>
-      <nav class="header__nav" id="main-nav">
-        <ul class="header__menu">
-          <li><a href="#catalog">Каталог</a></li>
-          <li><a href="#brands">Бренды</a></li>
-          <li><a href="#new-arrivals">Новинки</a></li>
-          <li><a href="#how-to-order">Как заказать</a></li>
-          <li><a href="#about">О компании</a></li>
-          <li><a href="#contact">Контакты</a></li>
-        </ul>
-      </nav>
-      <div class="header__actions">
-        <button class="header__search-btn" aria-label="Поиск">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-        <a href="#" class="header__cart" aria-label="Корзина">
-          <i class="fa-solid fa-cart-shopping"></i>
-          <span class="header__cart-count">0</span>
-        </a>
-        <div class="header__phone">
-          <i class="fa-solid fa-phone"></i>
-          <a href="tel:+78001234567">8 (800) 123-45-67</a>
+    <!-- Top Utility Bar -->
+    <div class="header__top-bar">
+      <div class="container header__top-bar-inner">
+        <div class="header__top-bar-contacts">
+          <a href="tel:+79040895589" class="header__top-bar-phone">
+            <i class="fa-solid fa-phone"></i>
+            +7 (904) 089-55-89
+          </a>
+          <a href="mailto:sales@odas-group.ru" class="header__top-bar-email">
+            <i class="fa-solid fa-envelope"></i>
+            sales@odas-group.ru
+          </a>
         </div>
-        <button class="header__burger" id="burger-btn" aria-label="Меню">
-          <i class="fa-solid fa-bars"></i>
-        </button>
+        <div class="header__top-bar-hours">
+          <i class="fa-regular fa-clock"></i>
+          Пн–Пт: 9:00–18:00, Сб–Вс: выходной
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Header Row -->
+    <div class="header__main">
+      <div class="container header__main-inner">
+        <div class="header__logo">
+          <a href="#">ОДАС-ГРУПП</a>
+        </div>
+
+        <nav class="header__nav" id="main-nav">
+          <ul class="header__menu">
+            <li class="header__menu-item header__menu-item--has-dropdown">
+              <a href="#catalog">Каталог</a>
+              <ul class="header__dropdown">
+                <li><a href="#catalog-manufacturers">По производителям</a></li>
+                <li><a href="#catalog-purpose">По назначению</a></li>
+                <li><a href="#catalog-tech-fluids">Технические жидкости</a></li>
+                <li><a href="#catalog-equipment">Оборудование</a></li>
+                <li><a href="#catalog-refrigerant-oils">Холодильные масла</a></li>
+                <li><a href="#catalog-transmission-oils">Трансмиссионные масла</a></li>
+                <li><a href="#catalog-atf">Жидкости для АКПП</a></li>
+                <li><a href="#catalog-ps-fluid">Жидкости для ГУР</a></li>
+                <li><a href="#catalog-antifreeze">Антифризы</a></li>
+              </ul>
+            </li>
+            <li class="header__menu-item"><a href="#brands">Бренды</a></li>
+            <li class="header__menu-item"><a href="#new-arrivals">Новинки</a></li>
+            <li class="header__menu-item"><a href="#how-to-order">Как заказать</a></li>
+            <li class="header__menu-item"><a href="#about">О компании</a></li>
+            <li class="header__menu-item"><a href="#contact">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <div class="header__icons">
+          <button class="header__icon-btn" aria-label="Поиск">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <a href="#" class="header__icon-btn" aria-label="Избранное">
+            <i class="fa-regular fa-heart"></i>
+          </a>
+          <a href="#" class="header__icon-btn" aria-label="Сравнение">
+            <i class="fa-solid fa-scale-balanced"></i>
+          </a>
+          <a href="#" class="header__icon-btn header__cart" aria-label="Корзина">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="header__cart-count">0</span>
+          </a>
+          <button class="header__burger" id="burger-btn" aria-label="Меню">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
       </div>
     </div>
   </header>

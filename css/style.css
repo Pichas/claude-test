@@ -640,6 +640,82 @@ p {
 }
 
 /* ============================================
+   How to Order (Steps) Section
+   ============================================ */
+.steps__grid {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.5rem;
+  position: relative;
+}
+
+.step {
+  flex: 1;
+  text-align: center;
+  position: relative;
+  max-width: 220px;
+}
+
+/* Connecting line between steps */
+.step:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 28px;
+  right: -1.5rem;
+  width: 1.5rem;
+  height: 2px;
+  background-color: var(--primary-light);
+}
+
+.step__number {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: var(--primary);
+  color: var(--bg);
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.step__icon {
+  font-size: 1.5rem;
+  color: var(--primary);
+  margin-bottom: 0.75rem;
+}
+
+.step__title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.step__description {
+  font-size: 0.9rem;
+  color: var(--text-soft);
+  line-height: 1.5;
+}
+
+/* ============================================
+   About Section
+   ============================================ */
+.about__content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about__text p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text-light);
+}
+
+/* ============================================
    Cookie Banner
    ============================================ */
 .cookie-banner {

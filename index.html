@@ -142,17 +142,257 @@
       </div>
     </section>
 
-    <!-- Popular Products Section -->
-    <section class="products section" id="catalog" data-aos="fade-up">
+    <!-- Products Section (Tabbed) -->
+    <section class="products section" id="products" data-aos="fade-up">
       <div class="container">
-        <h2 class="section-title">Популярные товары</h2>
-      </div>
-    </section>
+        <h2 class="section-title">Популярные подборки масел</h2>
 
-    <!-- Discounts Section -->
-    <section class="discounts section" id="discounts" data-aos="fade-up">
-      <div class="container">
-        <h2 class="section-title">Товары со скидкой</h2>
+        <!-- Tabs -->
+        <div class="products__tabs">
+          <button class="products__tab products__tab--active" data-tab="popular">Популярные</button>
+          <button class="products__tab" data-tab="discounts">Скидки</button>
+        </div>
+
+        <!-- Popular Tab Content -->
+        <div class="products__tab-content" id="tab-popular">
+          <div class="swiper products-swiper-popular">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="product-card__image-wrap">
+                    <img src="https://placehold.co/260x260/f5f5f5/333?text=TITAN+GT1" alt="TITAN GT1 PRO C-3 5W-30" class="product-card__image">
+                  </div>
+                  <div class="product-card__body">
+                    <span class="product-card__brand">Fuchs</span>
+                    <h3 class="product-card__title">TITAN GT1 PRO C-3 5W-30</h3>
+                    <div class="product-card__stock"><i class="fa-solid fa-circle-check"></i> В наличии</div>
+                    <div class="product-card__prices">
+                      <span class="product-card__price">4 850 ₽</span>
+                    </div>
+                    <button class="btn btn--primary product-card__btn">Купить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="product-card__image-wrap">
+                    <img src="https://placehold.co/260x260/f5f5f5/333?text=Mobil+1+ESP" alt="Mobil 1 ESP 5W-30" class="product-card__image">
+                  </div>
+                  <div class="product-card__body">
+                    <span class="product-card__brand">Mobil</span>
+                    <h3 class="product-card__title">Mobil 1 ESP 5W-30</h3>
+                    <div class="product-card__stock"><i class="fa-solid fa-circle-check"></i> В наличии</div>
+                    <div class="product-card__prices">
+                      <span class="product-card__price">5 200 ₽</span>
+                    </div>
+                    <button class="btn btn--primary product-card__btn">Купить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="product-card__image-wrap">
+                    <img src="https://placehold.co/260x260/f5f5f5/333?text=Shell+Helix" alt="Shell Helix Ultra 5W-40" class="product-card__image">
+                  </div>
+                  <div class="product-card__body">
+                    <span class="product-card__brand">Shell</span>
+                    <h3 class="product-card__title">Shell Helix Ultra 5W-40</h3>
+                    <div class="product-card__stock"><i class="fa-solid fa-circle-check"></i> В наличии</div>
+                    <div class="product-card__prices">
+                      <span class="product-card__price">4 600 ₽</span>
+                    </div>
+                    <button class="btn btn--primary product-card__btn">Купить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="product-card__image-wrap">
+                    <img src="https://placehold.co/260x260/f5f5f5/333?text=Castrol+EDGE" alt="Castrol EDGE 5W-30 LL" class="product-card__image">
+                  </div>
+                  <div class="product-card__body">
+                    <span class="product-card__brand">Castrol</span>
+                    <h3 class="product-card__title">Castrol EDGE 5W-30 LL</h3>
+                    <div class="product-card__stock"><i class="fa-solid fa-circle-check"></i> В наличии</div>
+                    <div class="product-card__prices">
+                      <span class="product-card__price">5 100 ₽</span>
+                    </div>
+                    <button class="btn btn--primary product-card__btn">Купить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="product-card__image-wrap">
+                    <img src="https://placehold.co/260x260/f5f5f5/333?text=Total+Quartz" alt="Total Quartz INEO MC3 5W-30" class="product-card__image">
+                  </div>
+                  <div class="product-card__body">
+                    <span class="product-card__brand">Total</span>
+                    <h3 class="product-card__title">Total Quartz INEO MC3 5W-30</h3>
+                    <div class="product-card__stock"><i class="fa-solid fa-circle-check"></i> В наличии</div>
+                    <div class="product-card__prices">
+                      <span class="product-card__price">3 950 ₽</span>
+                    </div>
+                    <button class="btn btn--primary product-card__btn">Купить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="product-card__image-wrap">
+                    <img src="https://placehold.co/260x260/f5f5f5/333?text=Liqui+Moly" alt="Liqui Moly Top Tec 4200 5W-30" class="product-card__image">
+                  </div>
+                  <div class="product-card__body">
+                    <span class="product-card__brand">Liqui Moly</span>
+                    <h3 class="product-card__title">Liqui Moly Top Tec 4200 5W-30</h3>
+                    <div class="product-card__stock"><i class="fa-solid fa-circle-check"></i> В наличии</div>
+                    <div class="product-card__prices">
+                      <span class="product-card__price">5 400 ₽</span>
+                    </div>
+                    <button class="btn btn--primary product-card__btn">Купить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="product-card__image-wrap">
+                    <img src="https://placehold.co/260x260/f5f5f5/333?text=Motul+8100" alt="Motul 8100 X-cess 5W-40" class="product-card__image">
+                  </div>
+                  <div class="product-card__body">
+                    <span class="product-card__brand">Motul</span>
+                    <h3 class="product-card__title">Motul 8100 X-cess 5W-40</h3>
+                    <div class="product-card__stock"><i class="fa-solid fa-circle-check"></i> В наличии</div>
+                    <div class="product-card__prices">
+                      <span class="product-card__price">6 200 ₽</span>
+                    </div>
+                    <button class="btn btn--primary product-card__btn">Купить</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+
+        <!-- Discounts Tab Content -->
+        <div class="products__tab-content products__tab-content--hidden" id="tab-discounts">
+          <div class="swiper products-swiper-discounts">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="product-card__image-wrap">
+                    <span class="product-card__badge">-15%</span>
+                    <img src="https://placehold.co/260x260/f5f5f5/333?text=TITAN+SYN" alt="TITAN SYN MC 10W-40" class="product-card__image">
+                  </div>
+                  <div class="product-card__body">
+                    <span class="product-card__brand">Fuchs</span>
+                    <h3 class="product-card__title">TITAN SYN MC 10W-40</h3>
+                    <div class="product-card__stock"><i class="fa-solid fa-circle-check"></i> В наличии</div>
+                    <div class="product-card__prices">
+                      <span class="product-card__price-old">3 800 ₽</span>
+                      <span class="product-card__price">3 230 ₽</span>
+                    </div>
+                    <button class="btn btn--primary product-card__btn">Купить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="product-card__image-wrap">
+                    <span class="product-card__badge">-20%</span>
+                    <img src="https://placehold.co/260x260/f5f5f5/333?text=Mobil+Super" alt="Mobil Super 3000 X1 5W-40" class="product-card__image">
+                  </div>
+                  <div class="product-card__body">
+                    <span class="product-card__brand">Mobil</span>
+                    <h3 class="product-card__title">Mobil Super 3000 X1 5W-40</h3>
+                    <div class="product-card__stock"><i class="fa-solid fa-circle-check"></i> В наличии</div>
+                    <div class="product-card__prices">
+                      <span class="product-card__price-old">4 500 ₽</span>
+                      <span class="product-card__price">3 600 ₽</span>
+                    </div>
+                    <button class="btn btn--primary product-card__btn">Купить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="product-card__image-wrap">
+                    <span class="product-card__badge">-10%</span>
+                    <img src="https://placehold.co/260x260/f5f5f5/333?text=Shell+HX7" alt="Shell Helix HX7 10W-40" class="product-card__image">
+                  </div>
+                  <div class="product-card__body">
+                    <span class="product-card__brand">Shell</span>
+                    <h3 class="product-card__title">Shell Helix HX7 10W-40</h3>
+                    <div class="product-card__stock"><i class="fa-solid fa-circle-check"></i> В наличии</div>
+                    <div class="product-card__prices">
+                      <span class="product-card__price-old">3 200 ₽</span>
+                      <span class="product-card__price">2 880 ₽</span>
+                    </div>
+                    <button class="btn btn--primary product-card__btn">Купить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="product-card__image-wrap">
+                    <span class="product-card__badge">-25%</span>
+                    <img src="https://placehold.co/260x260/f5f5f5/333?text=Castrol+GTX" alt="Castrol GTX 15W-40" class="product-card__image">
+                  </div>
+                  <div class="product-card__body">
+                    <span class="product-card__brand">Castrol</span>
+                    <h3 class="product-card__title">Castrol GTX 15W-40</h3>
+                    <div class="product-card__stock"><i class="fa-solid fa-circle-check"></i> В наличии</div>
+                    <div class="product-card__prices">
+                      <span class="product-card__price-old">2 800 ₽</span>
+                      <span class="product-card__price">2 100 ₽</span>
+                    </div>
+                    <button class="btn btn--primary product-card__btn">Купить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="product-card__image-wrap">
+                    <span class="product-card__badge">-18%</span>
+                    <img src="https://placehold.co/260x260/f5f5f5/333?text=Total+7000" alt="Total Quartz 7000 10W-40" class="product-card__image">
+                  </div>
+                  <div class="product-card__body">
+                    <span class="product-card__brand">Total</span>
+                    <h3 class="product-card__title">Total Quartz 7000 10W-40</h3>
+                    <div class="product-card__stock"><i class="fa-solid fa-circle-check"></i> В наличии</div>
+                    <div class="product-card__prices">
+                      <span class="product-card__price-old">3 400 ₽</span>
+                      <span class="product-card__price">2 788 ₽</span>
+                    </div>
+                    <button class="btn btn--primary product-card__btn">Купить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="product-card__image-wrap">
+                    <span class="product-card__badge">-12%</span>
+                    <img src="https://placehold.co/260x260/f5f5f5/333?text=Liqui+Moly+MoS2" alt="Liqui Moly MoS2 Leichtlauf 10W-40" class="product-card__image">
+                  </div>
+                  <div class="product-card__body">
+                    <span class="product-card__brand">Liqui Moly</span>
+                    <h3 class="product-card__title">Liqui Moly MoS2 Leichtlauf 10W-40</h3>
+                    <div class="product-card__stock"><i class="fa-solid fa-circle-check"></i> В наличии</div>
+                    <div class="product-card__prices">
+                      <span class="product-card__price-old">4 100 ₽</span>
+                      <span class="product-card__price">3 608 ₽</span>
+                    </div>
+                    <button class="btn btn--primary product-card__btn">Купить</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+
       </div>
     </section>
 

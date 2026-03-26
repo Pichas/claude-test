@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ОДАС-ГРУПП — поставщик автомобильных и промышленных масел. Fuchs, Mobil, Shell и другие бренды.">
+  <title>ОДАС-ГРУПП — Автомобильные и промышленные масла</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6.5.2 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12.1.3/swiper-bundle.min.css">
+
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- AOS fallback for no-JS -->
+  <noscript>
+    <style>
+      [data-aos] {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+      }
+    </style>
+  </noscript>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <!-- Top Utility Bar -->
+    <div class="header__top-bar">
+      <div class="container header__top-bar-inner">
+        <div class="header__top-bar-contacts">
+          <a href="tel:+79040895589" class="header__top-bar-phone">
+            <i class="fa-solid fa-phone"></i>
+            +7 (904) 089-55-89
+          </a>
+          <a href="mailto:sales@odas-group.ru" class="header__top-bar-email">
+            <i class="fa-solid fa-envelope"></i>
+            sales@odas-group.ru
+          </a>
+        </div>
+        <div class="header__top-bar-hours">
+          <i class="fa-regular fa-clock"></i>
+          Пн–Пт: 9:00–18:00, Сб–Вс: выходной
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Header Row -->
+    <div class="header__main">
+      <div class="container header__main-inner">
+        <div class="header__logo">
+          <a href="#">ОДАС-ГРУПП</a>
+        </div>
+
+        <nav class="header__nav" id="main-nav">
+          <ul class="header__menu">
+            <li class="header__menu-item header__menu-item--has-dropdown">
+              <a href="#catalog">Каталог</a>
+              <ul class="header__dropdown">
+                <li><a href="#catalog-manufacturers">По производителям</a></li>
+                <li><a href="#catalog-purpose">По назначению</a></li>
+                <li><a href="#catalog-tech-fluids">Технические жидкости</a></li>
+                <li><a href="#catalog-equipment">Оборудование</a></li>
+                <li><a href="#catalog-refrigerant-oils">Холодильные масла</a></li>
+                <li><a href="#catalog-transmission-oils">Трансмиссионные масла</a></li>
+                <li><a href="#catalog-atf">Жидкости для АКПП</a></li>
+                <li><a href="#catalog-ps-fluid">Жидкости для ГУР</a></li>
+                <li><a href="#catalog-antifreeze">Антифризы</a></li>
+              </ul>
+            </li>
+            <li class="header__menu-item"><a href="#brands">Бренды</a></li>
+            <li class="header__menu-item"><a href="#new-arrivals">Новинки</a></li>
+            <li class="header__menu-item"><a href="#how-to-order">Как заказать</a></li>
+            <li class="header__menu-item"><a href="#about">О компании</a></li>
+            <li class="header__menu-item"><a href="#contact">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <div class="header__icons">
+          <button class="header__icon-btn" aria-label="Поиск">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <a href="#" class="header__icon-btn" aria-label="Избранное">
+            <i class="fa-regular fa-heart"></i>
+          </a>
+          <a href="#" class="header__icon-btn" aria-label="Сравнение">
+            <i class="fa-solid fa-scale-balanced"></i>
+          </a>
+          <a href="#" class="header__icon-btn header__cart" aria-label="Корзина">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="header__cart-count">0</span>
+          </a>
+          <button class="header__burger" id="burger-btn" aria-label="Меню">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="container hero__content">
+        <h1 class="hero__title">Автомобильные масла</h1>
+        <p class="hero__subtitle">Оптовая и розничная доставка автомобильных и промышленных масел по всей России. Официальный дистрибьютор ведущих мировых брендов.</p>
+        <div class="hero__actions">
+          <a href="#products" class="btn btn--primary hero__btn">Скидки</a>
+          <a href="#new-arrivals" class="btn btn--primary hero__btn">Новинки</a>
+          <a href="#products" class="btn btn--primary hero__btn">Популярные подборки</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="brands section" id="brands">
+      <div class="container">
+        <h2 class="section-title">Лучшие автомасла на рынке России</h2>
+        <div class="brands__grid">
+          <div class="brand-card" data-aos="fade-up" data-aos-delay="100">
+            <img class="brand-card__image" src="https://placehold.co/400x200/7b4199/ffffff?text=FUCHS" alt="Fuchs">
+            <h3 class="brand-card__title">Fuchs</h3>
+            <p class="brand-card__description">Немецкий производитель смазочных материалов премиум-класса. Fuchs предлагает широкий ассортимент моторных и индустриальных масел, отвечающих самым высоким стандартам качества.</p>
+            <a href="#" class="btn btn--primary brand-card__btn">ВЫБРАТЬ</a>
+          </div>
+          <div class="brand-card" data-aos="fade-up" data-aos-delay="200">
+            <img class="brand-card__image" src="https://placehold.co/400x200/7b4199/ffffff?text=MOBIL" alt="Mobil">
+            <h3 class="brand-card__title">Mobil</h3>
+            <p class="brand-card__description">Мировой лидер в производстве синтетических моторных масел. Продукция Mobil обеспечивает превосходную защиту двигателя и увеличивает срок его службы.</p>
+            <a href="#" class="btn btn--primary brand-card__btn">ВЫБРАТЬ</a>
+          </div>
+          <div class="brand-card" data-aos="fade-up" data-aos-delay="300">
+            <img class="brand-card__image" src="https://placehold.co/400x200/7b4199/ffffff?text=SHELL" alt="Shell">
+            <h3 class="brand-card__title">Shell</h3>
+            <p class="brand-card__description">Один из крупнейших мировых брендов смазочных материалов. Shell разрабатывает инновационные решения для автомобильной и промышленной отраслей уже более 100 лет.</p>
+            <a href="#" class="btn btn--primary brand-card__btn">ВЫБРАТЬ</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section (Tabbed) -->
+    <section class="products section" id="products" data-aos="fade-up">
+      <div class="container">
+        <h2 class="section-title">Популярные подборки масел</h2>
+
+        <!-- Tabs -->
+        <div class="products__tabs">
+          <button class="products__tab products__tab--active" data-tab="popular">Популярные</button>
+          <button class="products__tab" data-tab="discounts">Скидки</button>
+        </div>
+
+        <!-- Popular Tab Content -->
+        <div class="products__tab-content" id="tab-popular">
+          <div class="swiper products-swiper-popular">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="product-card__image-wrap">
+                    <img src="https://placehold.co/260x260/f5f5f5/333?text=TITAN+GT1" alt="TITAN GT1 PRO C-3 5W-30" class="product-card__image">
+                  </div>
+                  <div class="product-card__body">
+                    <span class="product-card__brand">Fuchs</span>
+                    <h3 class="product-card__title">TITAN GT1 PRO C-3 5W-30</h3>
+                    <div class="product-card__stock"><i class="fa-solid fa-circle-check"></i> В наличии</div>
+                    <div class="product-card__prices">
+                      <span class="product-card__price">4 850 ₽</span>
+                    </div>
+                    <button class="btn btn--primary product-card__btn">Купить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="product-card__image-wrap">
+                    <img src="https://placehold.co/260x260/f5f5f5/333?text=Mobil+1+ESP" alt="Mobil 1 ESP 5W-30" class="product-card__image">
+                  </div>
+                  <div class="product-card__body">
+                    <span class="product-card__brand">Mobil</span>
+                    <h3 class="product-card__title">Mobil 1 ESP 5W-30</h3>
+                    <div class="product-card__stock"><i class="fa-solid fa-circle-check"></i> В наличии</div>
+                    <div class="product-card__prices">
+                      <span class="product-card__price">5 200 ₽</span>
+                    </div>
+                    <button class="btn btn--primary product-card__btn">Купить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="product-card__image-wrap">
+                    <img src="https://placehold.co/260x260/f5f5f5/333?text=Shell+Helix" alt="Shell Helix Ultra 5W-40" class="product-card__image">
+                  </div>
+                  <div class="product-card__body">
+                    <span class="product-card__brand">Shell</span>
+                    <h3 class="product-card__title">Shell Helix Ultra 5W-40</h3>
+                    <div class="product-card__stock"><i class="fa-solid fa-circle-check"></i> В наличии</div>
+                    <div class="product-card__prices">
+                      <span class="product-card__price">4 600 ₽</span>
+                    </div>
+                    <button class="btn btn--primary product-card__btn">Купить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="product-card__image-wrap">
+                    <img src="https://placehold.co/260x260/f5f5f5/333?text=Castrol+EDGE" alt="Castrol EDGE 5W-30 LL" class="product-card__image">
+                  </div>
+                  <div class="product-card__body">
+                    <span class="product-card__brand">Castrol</span>
+                    <h3 class="product-card__title">Castrol EDGE 5W-30 LL</h3>
+                    <div class="product-card__stock"><i class="fa-solid fa-circle-check"></i> В наличии</div>
+                    <div class="product-card__prices">
+                      <span class="product-card__price">5 100 ₽</span>
+                    </div>
+                    <button class="btn btn--primary product-card__btn">Купить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="product-card__image-wrap">
+                    <img src="https://placehold.co/260x260/f5f5f5/333?text=Total+Quartz" alt="Total Quartz INEO MC3 5W-30" class="product-card__image">
+                  </div>
+                  <div class="product-card__body">
+                    <span class="product-card__brand">Total</span>
+                    <h3 class="product-card__title">Total Quartz INEO MC3 5W-30</h3>
+                    <div class="product-card__stock"><i class="fa-solid fa-circle-check"></i> В наличии</div>
+                    <div class="product-card__prices">
+                      <span class="product-card__price">3 950 ₽</span>
+                    </div>
+                    <button class="btn btn--primary product-card__btn">Купить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="product-card__image-wrap">
+                    <img src="https://placehold.co/260x260/f5f5f5/333?text=Liqui+Moly" alt="Liqui Moly Top Tec 4200 5W-30" class="product-card__image">
+                  </div>
+                  <div class="product-card__body">
+                    <span class="product-card__brand">Liqui Moly</span>
+                    <h3 class="product-card__title">Liqui Moly Top Tec 4200 5W-30</h3>
+                    <div class="product-card__stock"><i class="fa-solid fa-circle-check"></i> В наличии</div>
+                    <div class="product-card__prices">
+                      <span class="product-card__price">5 400 ₽</span>
+                    </div>
+                    <button class="btn btn--primary product-card__btn">Купить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="product-card__image-wrap">
+                    <img src="https://placehold.co/260x260/f5f5f5/333?text=Motul+8100" alt="Motul 8100 X-cess 5W-40" class="product-card__image">
+                  </div>
+                  <div class="product-card__body">
+                    <span class="product-card__brand">Motul</span>
+                    <h3 class="product-card__title">Motul 8100 X-cess 5W-40</h3>
+                    <div class="product-card__stock"><i class="fa-solid fa-circle-check"></i> В наличии</div>
+                    <div class="product-card__prices">
+                      <span class="product-card__price">6 200 ₽</span>
+                    </div>
+                    <button class="btn btn--primary product-card__btn">Купить</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+
+        <!-- Discounts Tab Content -->
+        <div class="products__tab-content products__tab-content--hidden" id="tab-discounts">
+          <div class="swiper products-swiper-discounts">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="product-card__image-wrap">
+                    <span class="product-card__badge">-15%</span>
+                    <img src="https://placehold.co/260x260/f5f5f5/333?text=TITAN+SYN" alt="TITAN SYN MC 10W-40" class="product-card__image">
+                  </div>
+                  <div class="product-card__body">
+                    <span class="product-card__brand">Fuchs</span>
+                    <h3 class="product-card__title">TITAN SYN MC 10W-40</h3>
+                    <div class="product-card__stock"><i class="fa-solid fa-circle-check"></i> В наличии</div>
+                    <div class="product-card__prices">
+                      <span class="product-card__price-old">3 800 ₽</span>
+                      <span class="product-card__price">3 230 ₽</span>
+                    </div>
+                    <button class="btn btn--primary product-card__btn">Купить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="product-card__image-wrap">
+                    <span class="product-card__badge">-20%</span>
+                    <img src="https://placehold.co/260x260/f5f5f5/333?text=Mobil+Super" alt="Mobil Super 3000 X1 5W-40" class="product-card__image">
+                  </div>
+                  <div class="product-card__body">
+                    <span class="product-card__brand">Mobil</span>
+                    <h3 class="product-card__title">Mobil Super 3000 X1 5W-40</h3>
+                    <div class="product-card__stock"><i class="fa-solid fa-circle-check"></i> В наличии</div>
+                    <div class="product-card__prices">
+                      <span class="product-card__price-old">4 500 ₽</span>
+                      <span class="product-card__price">3 600 ₽</span>
+                    </div>
+                    <button class="btn btn--primary product-card__btn">Купить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="product-card__image-wrap">
+                    <span class="product-card__badge">-10%</span>
+                    <img src="https://placehold.co/260x260/f5f5f5/333?text=Shell+HX7" alt="Shell Helix HX7 10W-40" class="product-card__image">
+                  </div>
+                  <div class="product-card__body">
+                    <span class="product-card__brand">Shell</span>
+                    <h3 class="product-card__title">Shell Helix HX7 10W-40</h3>
+                    <div class="product-card__stock"><i class="fa-solid fa-circle-check"></i> В наличии</div>
+                    <div class="product-card__prices">
+                      <span class="product-card__price-old">3 200 ₽</span>
+                      <span class="product-card__price">2 880 ₽</span>
+                    </div>
+                    <button class="btn btn--primary product-card__btn">Купить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="product-card__image-wrap">
+                    <span class="product-card__badge">-25%</span>
+                    <img src="https://placehold.co/260x260/f5f5f5/333?text=Castrol+GTX" alt="Castrol GTX 15W-40" class="product-card__image">
+                  </div>
+                  <div class="product-card__body">
+                    <span class="product-card__brand">Castrol</span>
+                    <h3 class="product-card__title">Castrol GTX 15W-40</h3>
+                    <div class="product-card__stock"><i class="fa-solid fa-circle-check"></i> В наличии</div>
+                    <div class="product-card__prices">
+                      <span class="product-card__price-old">2 800 ₽</span>
+                      <span class="product-card__price">2 100 ₽</span>
+                    </div>
+                    <button class="btn btn--primary product-card__btn">Купить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="product-card__image-wrap">
+                    <span class="product-card__badge">-18%</span>
+                    <img src="https://placehold.co/260x260/f5f5f5/333?text=Total+7000" alt="Total Quartz 7000 10W-40" class="product-card__image">
+                  </div>
+                  <div class="product-card__body">
+                    <span class="product-card__brand">Total</span>
+                    <h3 class="product-card__title">Total Quartz 7000 10W-40</h3>
+                    <div class="product-card__stock"><i class="fa-solid fa-circle-check"></i> В наличии</div>
+                    <div class="product-card__prices">
+                      <span class="product-card__price-old">3 400 ₽</span>
+                      <span class="product-card__price">2 788 ₽</span>
+                    </div>
+                    <button class="btn btn--primary product-card__btn">Купить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="product-card__image-wrap">
+                    <span class="product-card__badge">-12%</span>
+                    <img src="https://placehold.co/260x260/f5f5f5/333?text=Liqui+Moly+MoS2" alt="Liqui Moly MoS2 Leichtlauf 10W-40" class="product-card__image">
+                  </div>
+                  <div class="product-card__body">
+                    <span class="product-card__brand">Liqui Moly</span>
+                    <h3 class="product-card__title">Liqui Moly MoS2 Leichtlauf 10W-40</h3>
+                    <div class="product-card__stock"><i class="fa-solid fa-circle-check"></i> В наличии</div>
+                    <div class="product-card__prices">
+                      <span class="product-card__price-old">4 100 ₽</span>
+                      <span class="product-card__price">3 608 ₽</span>
+                    </div>
+                    <button class="btn btn--primary product-card__btn">Купить</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- New Arrivals Section -->
+    <section class="new-arrivals section" id="new-arrivals" data-aos="fade-up">
+      <div class="container">
+        <h2 class="section-title">Новинки нашего магазина</h2>
+
+        <div class="swiper new-arrivals-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-card__image-wrap">
+                  <img src="https://placehold.co/260x260/f5f5f5/333?text=TITAN+Cargo" alt="TITAN Cargo MC 10W-40" class="product-card__image">
+                </div>
+                <div class="product-card__body">
+                  <span class="product-card__brand">Fuchs</span>
+                  <h3 class="product-card__title">TITAN Cargo MC 10W-40</h3>
+                  <div class="product-card__stock"><i class="fa-solid fa-circle-check"></i> В наличии</div>
+                  <div class="product-card__prices">
+                    <span class="product-card__price">4 300 ₽</span>
+                  </div>
+                  <button class="btn btn--primary product-card__btn">Купить</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-card__image-wrap">
+                  <img src="https://placehold.co/260x260/f5f5f5/333?text=Mobil+Delvac" alt="Mobil Delvac MX ESP 15W-40" class="product-card__image">
+                </div>
+                <div class="product-card__body">
+                  <span class="product-card__brand">Mobil</span>
+                  <h3 class="product-card__title">Mobil Delvac MX ESP 15W-40</h3>
+                  <div class="product-card__stock"><i class="fa-solid fa-circle-check"></i> В наличии</div>
+                  <div class="product-card__prices">
+                    <span class="product-card__price">3 750 ₽</span>
+                  </div>
+                  <button class="btn btn--primary product-card__btn">Купить</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-card__image-wrap">
+                  <img src="https://placehold.co/260x260/f5f5f5/333?text=Shell+Rimula" alt="Shell Rimula R6 LME 5W-30" class="product-card__image">
+                </div>
+                <div class="product-card__body">
+                  <span class="product-card__brand">Shell</span>
+                  <h3 class="product-card__title">Shell Rimula R6 LME 5W-30</h3>
+                  <div class="product-card__stock"><i class="fa-solid fa-circle-check"></i> В наличии</div>
+                  <div class="product-card__prices">
+                    <span class="product-card__price">5 600 ₽</span>
+                  </div>
+                  <button class="btn btn--primary product-card__btn">Купить</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-card__image-wrap">
+                  <img src="https://placehold.co/260x260/f5f5f5/333?text=Castrol+Vecton" alt="Castrol Vecton Long Drain 10W-40" class="product-card__image">
+                </div>
+                <div class="product-card__body">
+                  <span class="product-card__brand">Castrol</span>
+                  <h3 class="product-card__title">Castrol Vecton Long Drain 10W-40</h3>
+                  <div class="product-card__stock"><i class="fa-solid fa-circle-check"></i> В наличии</div>
+                  <div class="product-card__prices">
+                    <span class="product-card__price">4 100 ₽</span>
+                  </div>
+                  <button class="btn btn--primary product-card__btn">Купить</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-card__image-wrap">
+                  <img src="https://placehold.co/260x260/f5f5f5/333?text=Total+Rubia" alt="Total Rubia TIR 9900 FE 5W-30" class="product-card__image">
+                </div>
+                <div class="product-card__body">
+                  <span class="product-card__brand">Total</span>
+                  <h3 class="product-card__title">Total Rubia TIR 9900 FE 5W-30</h3>
+                  <div class="product-card__stock"><i class="fa-solid fa-circle-check"></i> В наличии</div>
+                  <div class="product-card__prices">
+                    <span class="product-card__price">4 950 ₽</span>
+                  </div>
+                  <button class="btn btn--primary product-card__btn">Купить</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-card__image-wrap">
+                  <img src="https://placehold.co/260x260/f5f5f5/333?text=Motul+300V" alt="Motul 300V Power 5W-40" class="product-card__image">
+                </div>
+                <div class="product-card__body">
+                  <span class="product-card__brand">Motul</span>
+                  <h3 class="product-card__title">Motul 300V Power 5W-40</h3>
+                  <div class="product-card__stock"><i class="fa-solid fa-circle-check"></i> В наличии</div>
+                  <div class="product-card__prices">
+                    <span class="product-card__price">7 200 ₽</span>
+                  </div>
+                  <button class="btn btn--primary product-card__btn">Купить</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+
+        <div class="new-arrivals__footer">
+          <a href="#" class="btn btn--outline new-arrivals__all-btn">Все новинки</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- How to Order Section -->
+    <section class="steps section" id="how-to-order">
+      <div class="container">
+        <h2 class="section-title">Как заказать</h2>
+        <div class="steps__grid">
+          <div class="step" data-aos="fade-up" data-aos-delay="100">
+            <div class="step__number">1</div>
+            <div class="step__icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <h3 class="step__title">Выберите товар</h3>
+            <p class="step__description">Найдите нужное масло в каталоге или воспользуйтесь поиском по бренду и характеристикам.</p>
+          </div>
+          <div class="step" data-aos="fade-up" data-aos-delay="200">
+            <div class="step__number">2</div>
+            <div class="step__icon"><i class="fa-solid fa-cart-plus"></i></div>
+            <h3 class="step__title">Добавьте в корзину</h3>
+            <p class="step__description">Выберите нужный объём и количество, затем добавьте товар в корзину.</p>
+          </div>
+          <div class="step" data-aos="fade-up" data-aos-delay="300">
+            <div class="step__number">3</div>
+            <div class="step__icon"><i class="fa-solid fa-clipboard-list"></i></div>
+            <h3 class="step__title">Оформите заказ</h3>
+            <p class="step__description">Заполните форму с контактными данными и выберите удобный способ доставки.</p>
+          </div>
+          <div class="step" data-aos="fade-up" data-aos-delay="400">
+            <div class="step__number">4</div>
+            <div class="step__icon"><i class="fa-solid fa-phone"></i></div>
+            <h3 class="step__title">Подтвердите заказ</h3>
+            <p class="step__description">Наш менеджер свяжется с вами для подтверждения заказа и уточнения деталей.</p>
+          </div>
+          <div class="step" data-aos="fade-up" data-aos-delay="500">
+            <div class="step__number">5</div>
+            <div class="step__icon"><i class="fa-solid fa-truck"></i></div>
+            <h3 class="step__title">Получите доставку</h3>
+            <p class="step__description">Мы доставим заказ по указанному адресу в кратчайшие сроки по всей России.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+      <div class="container">
+        <h2 class="section-title">Продажа качественных масел оптом и в розницу</h2>
+        <div class="about__content" data-aos="fade-up">
+          <div class="about__text">
+            <p>Компания «ОДАС-ГРУПП» — надёжный поставщик автомобильных и промышленных масел на российском рынке. Мы являемся официальным дистрибьютором ведущих мировых производителей, таких как Fuchs, Mobil, Shell, Castrol и других. Вся продукция сертифицирована и соответствует международным стандартам качества.</p>
+            <p>Наши клиенты — автосервисы, транспортные и логистические компании, промышленные предприятия, а также частные автовладельцы. Мы предлагаем широкий ассортимент моторных, трансмиссионных, индустриальных масел, технических жидкостей и сопутствующего оборудования как оптом, так и в розницу.</p>
+            <p>Мы гарантируем подлинность каждого продукта, конкурентные цены и оперативную доставку по всей России. Наша команда специалистов всегда готова помочь с подбором масла под конкретные задачи и технические требования вашего оборудования.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Consultation Form Section -->
+    <section class="consultation section" id="consultation" data-aos="fade-up">
+      <div class="container">
+        <h2 class="section-title">Не знаете какое масло подобрать?</h2>
+        <p class="consultation__subtitle">Оставьте заявку на бесплатную консультацию — мы ответим в течение 15 минут!</p>
+
+        <form class="consultation__form" action="#" method="POST" novalidate>
+          <!-- Honeypot -->
+          <div class="form__group form__group--honeypot" aria-hidden="true">
+            <label for="website">Не заполняйте</label>
+            <input type="text" name="website" id="website" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="form__group">
+            <label class="form__label visually-hidden" for="consultation-name">Ваше имя</label>
+            <input class="form__input" type="text" id="consultation-name" name="name" placeholder="Ваше имя" required data-validate="name">
+          </div>
+
+          <div class="form__group">
+            <label class="form__label visually-hidden" for="consultation-phone">Телефон</label>
+            <input class="form__input" type="tel" id="consultation-phone" name="phone" placeholder="+7 (___) ___-__-__" required data-validate="phone">
+          </div>
+
+          <div class="form__group">
+            <label class="form__label visually-hidden" for="consultation-message">Ваш вопрос</label>
+            <textarea class="form__textarea" id="consultation-message" name="message" placeholder="Ваш вопрос" rows="4" data-validate="message"></textarea>
+          </div>
+
+          <div class="form__group form__checkbox">
+            <input type="checkbox" id="consultation-privacy" name="privacy" required data-validate="privacy">
+            <label for="consultation-privacy">Я согласен с <a href="#" target="_blank">политикой конфиденциальности</a></label>
+          </div>
+
+          <div class="form__group">
+            <button type="submit" class="btn btn--primary form__submit">Заказать звонок</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact" data-aos="fade-up">
+      <div class="container">
+        <h2 class="section-title">Контакты</h2>
+      </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners section" id="partners" data-aos="fade-up">
+      <div class="container">
+        <h2 class="section-title">Наши партнёры</h2>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__column">
+          <h4 class="footer__title">Популярные подборки</h4>
+          <ul class="footer__links">
+            <li><a href="#">Моторные масла 5W-30</a></li>
+            <li><a href="#">Моторные масла 5W-40</a></li>
+            <li><a href="#">Масла для дизельных двигателей</a></li>
+            <li><a href="#">Синтетические масла</a></li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <h4 class="footer__title">Популярные категории</h4>
+          <ul class="footer__links">
+            <li><a href="#">Моторные масла</a></li>
+            <li><a href="#">Трансмиссионные масла</a></li>
+            <li><a href="#">Технические жидкости</a></li>
+            <li><a href="#">Антифризы</a></li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <h4 class="footer__title">Контакты</h4>
+          <ul class="footer__contact">
+            <li><i class="fa-solid fa-phone"></i> <a href="tel:+79040895589">+7 (904) 089-55-89</a></li>
+            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:sales@odas-group.ru">sales@odas-group.ru</a></li>
+            <li><i class="fa-solid fa-location-dot"></i> г. Белгород</li>
+            <li><i class="fa-solid fa-clock"></i> Пн-Вс 09:00-18:30</li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <h4 class="footer__title">Мы в соцсетях</h4>
+          <div class="footer__social">
+            <a href="#" class="footer__social-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" class="footer__social-btn" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 — 2026 ODAS-GROUP</p>
+        <a href="#">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+    <button class="mobile-nav-overlay__close" id="mobile-nav-close" aria-label="Закрыть меню">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <ul class="mobile-nav-overlay__list">
+      <li><a href="#catalog">Каталог</a></li>
+      <li><a href="#brands">Бренды</a></li>
+      <li><a href="#new-arrivals">Новинки</a></li>
+      <li><a href="#how-to-order">Как заказать</a></li>
+      <li><a href="#about">О компании</a></li>
+      <li><a href="#contact">Контакты</a></li>
+    </ul>
+  </div>
+
+  <!-- Cookie Consent -->
+  <div class="cookie-banner" id="cookie-banner">
+    <div class="container cookie-banner__inner">
+      <p class="cookie-banner__text">Мы используем файлы cookie для улучшения работы сайта и анализа трафика. Продолжая использовать сайт, вы соглашаетесь с использованием файлов cookie.</p>
+      <button class="btn btn--primary cookie-banner__btn" id="cookie-accept">Принять</button>
+    </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12.1.3/swiper-bundle.min.js"></script>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>

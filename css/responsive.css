@@ -1,0 +1,367 @@
+/* ============================================
+   Mobile Nav Overlay
+   ============================================ */
+.mobile-nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.92);
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.mobile-nav-overlay--open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-nav-overlay__close {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  color: #fff;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-nav-overlay__list {
+  list-style: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.mobile-nav-overlay__list a {
+  color: #fff;
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 700;
+  transition: color 0.3s ease;
+  display: block;
+  padding: 0.5rem 1rem;
+  min-height: 44px;
+  line-height: 44px;
+}
+
+.mobile-nav-overlay__list a:hover {
+  color: var(--primary-light);
+}
+
+/* ============================================
+   AOS Noscript Fallback
+   ============================================ */
+.no-js [data-aos] {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+/* ============================================
+   Tablet — max-width: 1024px
+   ============================================ */
+@media (max-width: 1024px) {
+  .header__menu-item > a {
+    font-size: 0.85rem;
+  }
+
+  .header__menu {
+    gap: 1rem;
+  }
+
+  .hero {
+    padding: 3.5rem 0;
+    min-height: 400px;
+  }
+
+  .hero__title {
+    font-size: 2.25rem;
+  }
+
+  .hero__subtitle {
+    font-size: 1.05rem;
+  }
+
+  .brands__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .brands__grid .brand-card:nth-child(3) {
+    grid-column: 1 / -1;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .steps__grid {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .step {
+    flex: 0 0 calc(33.333% - 1.5rem);
+    max-width: none;
+  }
+
+  .footer__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ============================================
+   Mobile — max-width: 768px
+   ============================================ */
+@media (max-width: 768px) {
+  .header__nav {
+    display: none;
+  }
+
+  .header__burger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+  }
+
+  .header__top-bar-hours {
+    display: none;
+  }
+
+  .hero {
+    padding: 2.5rem 0;
+    min-height: auto;
+  }
+
+  .hero__title {
+    font-size: 1.75rem;
+  }
+
+  .hero__subtitle {
+    font-size: 1rem;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__btn {
+    width: 100%;
+    max-width: 280px;
+    padding: 0.75rem 1.5rem;
+  }
+
+  .brands__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .brands__grid .brand-card:nth-child(3) {
+    max-width: none;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .section {
+    padding: 2.5rem 0;
+  }
+
+  .steps__grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    padding-left: 2rem;
+  }
+
+  .step {
+    flex: none;
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .step__number {
+    margin: 0;
+    flex-shrink: 0;
+  }
+
+  .step__icon {
+    display: none;
+  }
+
+  .step__title,
+  .step__description {
+    flex-basis: calc(100% - 56px - 0.75rem);
+  }
+
+  .step__description {
+    margin-left: calc(56px + 0.75rem);
+  }
+
+  .step:not(:last-child)::after {
+    display: none;
+  }
+
+  /* Vertical connecting line */
+  .steps__grid::before {
+    content: '';
+    position: absolute;
+    left: calc(2rem + 28px);
+    top: 28px;
+    bottom: 28px;
+    width: 2px;
+    background-color: var(--primary-light);
+  }
+
+  .about__content {
+    max-width: 100%;
+    padding: 0 0.5rem;
+  }
+
+  .consultation__form {
+    max-width: 100%;
+  }
+
+  .form__input,
+  .form__textarea {
+    width: 100%;
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .cookie-banner__text {
+    font-size: 0.8rem;
+  }
+
+  .cookie-banner__inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cookie-banner__btn {
+    width: 100%;
+  }
+
+  /* Swiper overrides */
+  .products-swiper-popular,
+  .products-swiper-discounts,
+  .new-arrivals-swiper {
+    padding: 0 1rem;
+  }
+}
+
+/* ============================================
+   Small Mobile — max-width: 480px
+   ============================================ */
+@media (max-width: 480px) {
+  .hero__title {
+    font-size: 1.5rem;
+  }
+
+  .hero__subtitle {
+    font-size: 0.9rem;
+  }
+
+  .hero {
+    padding: 2rem 0;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  .btn {
+    padding: 0.65rem 1.25rem;
+    font-size: 0.9rem;
+  }
+
+  /* Ensure no horizontal overflow */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Touch-friendly tap targets */
+  .header__icon-btn {
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .products__tab {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    min-height: 44px;
+  }
+
+  .form__input,
+  .form__textarea {
+    min-height: 44px;
+  }
+
+  .form__checkbox input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+  }
+
+  .product-card__btn {
+    min-height: 44px;
+  }
+
+  .brand-card__btn {
+    min-height: 44px;
+  }
+
+  .footer__social-btn {
+    width: 44px;
+    height: 44px;
+  }
+
+  .mobile-nav-overlay__list a {
+    min-height: 48px;
+    line-height: 48px;
+  }
+}

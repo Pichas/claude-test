@@ -23,6 +23,17 @@
   <!-- Custom Styles -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- AOS fallback for no-JS -->
+  <noscript>
+    <style>
+      [data-aos] {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+      }
+    </style>
+  </noscript>
 </head>
 <body>
 
@@ -663,6 +674,21 @@
       </div>
     </div>
   </footer>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+    <button class="mobile-nav-overlay__close" id="mobile-nav-close" aria-label="Закрыть меню">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <ul class="mobile-nav-overlay__list">
+      <li><a href="#catalog">Каталог</a></li>
+      <li><a href="#brands">Бренды</a></li>
+      <li><a href="#new-arrivals">Новинки</a></li>
+      <li><a href="#how-to-order">Как заказать</a></li>
+      <li><a href="#about">О компании</a></li>
+      <li><a href="#contact">Контакты</a></li>
+    </ul>
+  </div>
 
   <!-- Cookie Consent -->
   <div class="cookie-banner" id="cookie-banner">

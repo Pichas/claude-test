@@ -374,18 +374,56 @@ p {
    Hero Base Styles
    ============================================ */
 .hero {
-  background-color: var(--secondary);
+  background: linear-gradient(135deg, rgba(123, 65, 153, 0.85) 0%, rgba(30, 20, 40, 0.92) 100%),
+              var(--secondary);
+  background-color: var(--primary-dark);
+  min-height: 500px;
+  display: flex;
+  align-items: center;
   padding: 5rem 0;
   text-align: center;
 }
 
+.hero__content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .hero__title {
-  margin-bottom: 1rem;
+  font-size: 3rem;
+  color: var(--bg);
+  margin-bottom: 1.25rem;
 }
 
 .hero__subtitle {
   font-size: 1.2rem;
-  color: var(--text-soft);
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero__btn {
+  padding: 0.85rem 2rem;
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.hero__btn:hover {
+  background-color: var(--primary-light);
+  color: var(--bg);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(123, 65, 153, 0.4);
 }
 
 /* ============================================

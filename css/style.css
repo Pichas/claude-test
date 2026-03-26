@@ -622,6 +622,24 @@ p {
 }
 
 /* ============================================
+   New Arrivals Section
+   ============================================ */
+.new-arrivals-swiper {
+  position: relative;
+  padding: 0 2.5rem;
+}
+
+.new-arrivals-swiper .swiper-button-prev,
+.new-arrivals-swiper .swiper-button-next {
+  color: var(--primary);
+}
+
+.new-arrivals__footer {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+/* ============================================
    Cookie Banner
    ============================================ */
 .cookie-banner {

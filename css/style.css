@@ -427,6 +427,50 @@ p {
 }
 
 /* ============================================
+   Brands Section
+   ============================================ */
+.brands__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.brand-card {
+  background-color: var(--bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.brand-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.brand-card__image {
+  width: 100%;
+  height: auto;
+}
+
+.brand-card__title {
+  margin: 1.25rem 0 0.75rem;
+  font-size: 1.25rem;
+}
+
+.brand-card__description {
+  padding: 0 1.5rem;
+  font-size: 0.95rem;
+  color: var(--text-soft);
+}
+
+.brand-card__btn {
+  margin-top: 0.5rem;
+}
+
+/* ============================================
    Cookie Banner
    ============================================ */
 .cookie-banner {
